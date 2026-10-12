@@ -1,0 +1,973 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+span {
+  display: inline-block;
+}
+
+.btn {
+  padding: 8px 30px;
+  border-radius: 20px;
+}
+
+.primary-btn {
+  background-color: #231A36;
+  color: #ffffff;
+}
+
+.secondary-btn {
+  background-color:rgba(255, 255, 255, 0.2);
+}
+
+.third-btn{
+  background-color: #231A36;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color:#ffffff;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1115px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+
+.bg{
+   background: url("./img/banner/Mask\ Group.png") no-repeat center;
+   /* background-repeat: no-repeat;
+   background-position: center; */
+   background-size: cover;
+}
+
+.size-6{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+
+/* Header */
+
+header {
+  padding: 20px 0px;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-wrapper a {
+  color: #ffffff;
+}
+
+.header-wrapper nav {
+  display: flex;
+  gap: 30px;
+}
+
+/* Banner */
+.banner {
+  padding: 100px 0px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.banner h1 {
+  font-size: 94px;
+}
+
+.banner p {
+  margin-bottom: 50px;
+}
+
+/* clients */
+
+.clients{
+    padding: 80px 0px;
+}
+
+.clients h4{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.clients-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* solutions  */
+
+.solutions{
+    padding: 50px 0px;
+    
+}
+
+.solutions .container{
+  max-width: 750px;
+}
+
+.solutions-heading{
+  text-align: center;
+
+  margin-bottom: 40px;
+}
+
+.solutions-heading h1{
+font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.solutions-heading p {
+  max-width: 500px;
+  margin: 0px auto;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #527274;
+}
+
+
+
+.solutions-wrapper > div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.solutions-wrapper a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* .solutions-wrapper > div > div{
+  width: 50%;
+} */
+
+
+    /* .solutions-wrapper > div:nth-child(1) > div:nth-child(2),
+.solutions-wrapper > div:nth-child(3) > div:nth-child(2){
+
+text-align: right;
+}
+ */
+
+ /* profile */
+
+ .profile{
+  padding: 100px 0px;
+  background-color: #231A36;
+  color: white;
+ }
+
+ .profile .container{
+  max-width: 750px;
+ }
+
+ .profile-heading{
+  text-align: center;
+  margin-bottom: 50px;
+ }
+
+  .profile-heading h1{
+    font-size: 36px;
+  font-weight: 600;
+  
+  margin-bottom: 12px;
+  }
+
+  .profile-heading p {
+  max-width: 500px;
+  margin: 0px auto;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #527274;
+}
+
+
+ .profile-wrapper{
+  display: flex;
+  justify-content: space-between;
+  
+ }
+
+ 
+/* clothing section */
+
+/* Clothing Section */
+
+.clothing {
+  padding: 60px 0px;
+}
+
+.clothing-heading {
+  text-align: center;
+  margin-bottom: 85px;
+}
+
+.clothing-heading h1 {
+  font-size: 36px;
+  font-weight: 600;
+  
+  margin-bottom: 12px;
+}
+
+.clothing-heading p {
+  max-width: 500px;
+  margin: 0px auto;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #527274;
+}
+
+/* Cards Layout */
+
+.clothing-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+}
+
+.clothing-card {
+  position: relative;
+  min-width: 0;
+  padding-bottom: 68px;
+}
+
+/* Images */
+.clothing-image {
+  width: 100%;
+  height: 270px;
+  background-color: #f0f3f3;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.clothing-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+
+
+/* Overlapping Information Card */
+
+.clothing-info {
+  position: absolute;
+  top: 184px;
+  left: 0px;
+  width: 80%;
+  min-height: 161px;
+  padding: 22px 24px 18px;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+
+.clothing-info h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #383842;
+  margin-bottom: 17px;
+}
+
+/* Statistics */
+
+.clothing-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.clothing-stats h2 {
+  font-size: 23px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #25252d;
+  white-space: nowrap;
+  margin-bottom: 5px;
+}
+
+.clothing-stats p {
+  font-size: 8px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #a4a4b2;
+  white-space: nowrap;
+  margin-bottom: 0px;
+}
+
+.clothing-info a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* clients */
+
+.clientss{
+  padding: 100px 0px;
+}
+
+.clientss .container{
+  max-width: 950px;
+}
+
+.clients-heading{
+  text-align: center;
+  margin-bottom: 85px;
+}
+
+.clients-heading h1{
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  display: inline-block;
+  position: relative;
+}
+
+.star{
+  position: absolute;
+  top: -54px;
+    left: -39px;
+}
+
+.clients-heading p{
+  max-width: 500px;
+  margin: 0px auto;
+  font-size: 15px;
+  color: #527274;
+}
+
+.clientss-wrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+.clients-content {
+  width: 90%;
+  max-width: 530px;
+}
+
+.client-logo {
+  width: 39px;
+  height: 39px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 28px;
+  border-radius: 50%;
+
+}
+
+.client-text {
+  max-width: 480px;
+  margin-bottom: 35px;
+  color: #777777;
+  
+}
+
+.client-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 50%;
+  max-width: 400px;
+  height: 340px;
+}
+
+.client-image img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  max-width: 330px;
+  height: 390px;
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+
+
+/* newsletter */
+
+.newsletter{
+  padding: 100px 0px;
+
+}
+
+.newsletter .container{
+  max-width: 950px;
+  padding: 80px 0px;
+  border-radius: 20px;
+  background: url(./img/banner/Mask\ Group.png) no-repeat center;
+  background-size: cover;
+}
+
+.newsletter-heading{
+  color: white;
+  text-align: center;
+}
+
+.newsletter-heading h1{
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.newsletter-heading p{
+  max-width: 500px;
+  margin: 0px auto;
+  font-size: 15px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+/* footer */
+
+/* 
+.footer{
+  padding: 80px 0px;
+}
+
+
+.footer .container{
+  max-width: 950px;
+}
+
+.footer-wrapper .image{
+  color: black;
+}
+
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.footer-wrapper nav {
+  display: flex;
+  gap: 30px;
+} */
+
+
+/* Footer */
+
+.footer {
+  padding: 80px 0px;
+
+}
+
+.footer .container {
+  max-width: 950px;
+  
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+
+.footer-wrapper img {
+  filter: brightness(0);
+}
+
+/* Navigation */
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-nav a {
+  color: black;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* Social icons */
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  color: #080808;
+  text-decoration: none;
+}
+
+.footer-social svg {
+  display: block;
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+/* Divider */
+
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #eeeeee;
+  margin-top: 30px;
+}
+
+/* Copyright */
+
+.footer-copyright {
+  margin: 18px 0 0;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #999999;
+}
+
+@media screen and (min-width: 768px) {
+  .line-break {
+    display: block;
+  }
+
+  .solutions-wrapper > div > div {
+    width: 50%;
+  }
+
+  .solutions-wrapper > div:nth-child(1) > div:nth-child(2),
+  .solutions-wrapper > div:nth-child(3) > div:nth-child(2) {
+    text-align: right;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  .banner h1 {
+    font-size: 64px;
+  }
+
+  .clients-wrapper div {
+    width: 33.333%;
+    margin-bottom: 30px;
+  }
+
+  .clothing .container {
+    max-width: 750px;
+  }
+
+  .clothing-wrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 35px 24px;
+  }
+
+  .clothing-info {
+    width: 85%;
+  }
+
+  .clothing-heading {
+    margin-bottom: 60px;
+  }
+
+  .clientss-wrapper {
+    gap: 30px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  /* Header */
+  header {
+    padding: 16px 0;
+  }
+
+  .header-wrapper {
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+  }
+
+  .header-wrapper nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  /* Banner */
+  .banner {
+    padding: 60px 0 70px;
+  }
+
+  .banner h1 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  .banner p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+
+  /* Clients */
+  .clients {
+    padding: 50px 0;
+  }
+
+  .clients h4 {
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+
+  .clients-wrapper div {
+    width: 50%;
+    margin-bottom: 25px;
+    padding: 0 10px;
+  }
+
+  /* Solutions */
+  .solutions {
+    padding: 50px 0;
+  }
+
+  .solutions-heading {
+    margin-bottom: 35px;
+  }
+
+  .solutions-heading h1 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .solutions-heading p {
+    font-size: 14px;
+  }
+
+  .solutions-wrapper > div {
+    flex-direction: column;
+    text-align: center;
+    gap: 35px;
+    margin-bottom: 50px;
+  }
+
+  .solutions-wrapper > div:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+
+  .solutions-wrapper > div > div {
+    width: 100%;
+    text-align: center;
+  }
+
+  .solutions-wrapper span,
+  .solutions-wrapper h3,
+  .solutions-wrapper p {
+    margin-bottom: 14px;
+  }
+
+  .solutions-wrapper a {
+    justify-content: center;
+  }
+
+  .solutions-wrapper img {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Profile */
+  .profile {
+    padding: 60px 0;
+  }
+
+  .profile-heading {
+    margin-bottom: 35px;
+  }
+
+  .profile-heading h1 {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .profile-heading p {
+    font-size: 14px;
+  }
+
+  .profile-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 15px;
+    text-align: center;
+  }
+
+  .profile-wrapper h1 {
+    font-size: 32px;
+  }
+
+  .profile-wrapper p {
+    font-size: 13px;
+  }
+
+  /* Clothing Cards */
+  .clothing {
+    padding: 50px 0;
+  }
+
+  .clothing-heading {
+    margin-bottom: 45px;
+  }
+
+  .clothing-heading h1 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .clothing-heading p {
+    font-size: 14px;
+  }
+
+  .clothing-wrapper {
+    grid-template-columns: 1fr;
+    max-width: 380px;
+    margin: 0 auto;
+    gap: 35px;
+  }
+
+  .clothing-card {
+    padding-bottom: 75px;
+  }
+
+  .clothing-image {
+    height: 280px;
+  }
+
+  .clothing-image img {
+    height: 100%;
+  }
+
+  .clothing-info {
+    width: 88%;
+    top: 190px;
+    left: 0;
+  }
+
+  /* Happy Clients */
+  .clientss {
+    padding: 50px 0;
+  }
+
+  .clients-heading {
+    margin-bottom: 40px;
+  }
+
+  .clients-heading h1 {
+    font-size: 28px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+  }
+
+  .clients-heading p {
+    font-size: 14px;
+  }
+
+  .clientss-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 35px;
+  }
+
+  .clients-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .client-logo {
+    margin: 0 auto 20px;
+  }
+
+  .client-text {
+    margin: 0 auto 25px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .client-author {
+    margin-bottom: 10px;
+  }
+
+  .client-image {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .client-image img {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+  }
+
+  /* Newsletter */
+  .newsletter {
+    padding: 50px 0;
+  }
+
+  .newsletter .container {
+    padding: 50px 20px;
+    border-radius: 16px;
+  }
+
+  .newsletter-heading h1 {
+    font-size: 26px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+  }
+
+  .newsletter-heading p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 45px 0 25px;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    text-align: center;
+  }
+
+  .footer-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .footer-nav a {
+    font-size: 13px;
+  }
+
+  .footer-social {
+    gap: 18px;
+  }
+
+  .footer-social svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .footer-divider {
+    margin-top: 25px;
+  }
+
+  .footer-copyright {
+    margin-top: 15px;
+    font-size: 11px;
+  }
+}
+
+/* Small Mobile Screens (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .banner h1 {
+    font-size: 32px;
+  }
+
+  .banner p {
+    font-size: 13px;
+  }
+
+  .solutions-heading h1,
+  .profile-heading h1,
+  .clothing-heading h1,
+  .clients-heading h1,
+  .newsletter-heading h1 {
+    font-size: 24px;
+  }
+
+  .clothing-wrapper {
+    max-width: 100%;
+  }
+
+  .clothing-info {
+    width: 92%;
+    top: 175px;
+    padding: 16px 18px;
+  }
+
+  .clothing-stats h2 {
+    font-size: 18px;
+  }
+
+  .profile-wrapper {
+    gap: 24px 10px;
+  }
+
+  .profile-wrapper h1 {
+    font-size: 26px;
+  }
+
+  .newsletter .container {
+    padding: 40px 15px;
+  }
+}
